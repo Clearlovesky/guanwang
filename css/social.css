@@ -1,0 +1,111 @@
+.social{
+	width: 100%;
+	height: 64rem;
+    background-color: #4A4A4A;
+    z-index: 1;
+    position: relative;
+}
+
+/* .social .dubai{
+	background-color: #ccc;
+	font-size: 5.0rem;
+	line-height: 10.0rem;
+	height: 10.0rem;
+	text-align: center;
+	transition:all 3s;
+	transform-style:preserve-3d;
+	position: relative;
+} */
+
+/* 图片展示 */
+.social>a>img{
+	transition:all 2s;
+	position: absolute;
+	margin: 0.5rem 0 0 0.5rem;
+}
+.social a img:hover{
+	transform:scale(0.95,0.95);
+}
+.social>a {
+	opacity: 0.4;
+}
+.social a:nth-child(2) img{
+	width: 27%;
+	height: 35rem;
+	left: 0;
+	top: 0;
+}
+
+.social a:nth-child(3) img{
+	width: 47%;
+	height: 27.3rem;
+	left: 27.7%;
+	top: 0;
+}
+.social a:nth-child(4) img{
+	width: 23.5%;
+	height: 17.8rem;
+	left: 75.4%;
+	top: 0;
+}
+.social a:nth-child(5) img{
+	width: 27%;
+	height: 27.4rem;
+	left: 0;
+	top: 55.6%;
+}
+.social a:nth-child(6) img{
+	width: 47%;
+	height: 35.2rem;
+	left: 27.7%;
+	top: 43.4%;
+}
+.social a:nth-child(7) img{
+	width: 23.5%;
+	height: 27.0rem;
+	left:75.4%;
+	top: 28.8%;
+}
+/* 社区精选 */
+.selection{
+	position: absolute;
+	width: 16.3rem;
+	height: 12.0rem;
+	left: 79.4%;
+	top: 78%;
+}
+.selection > h4{
+	color: #4FE3C3;
+	margin-bottom: 2.0rem;
+	font-size: 1.4rem;
+}
+.selection > p{
+	color: #ccc;
+	font-size: 0.9rem;
+}
+.selection > a{
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	line-height: 2.8rem;
+	margin-top: 1.5rem;
+	width: 9.0rem;
+	height: 2.8rem;
+	border-radius: 2rem;
+	background-color: #0bf5c2;	
+}
+.selection>a:hover{
+	background-color: #4FE3C3;
+}
+.selection>a span{
+	font-weight: bold;
+	transition: all 2s;
+	margin-right: 0.7rem;
+}
+.selection>a em{
+	font-style: normal;
+}
+.selection>a:hover span{
+ margin-right: 2rem;
+}

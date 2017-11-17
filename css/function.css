@@ -1,0 +1,50 @@
+/* 第三模块功能模块 */
+.function{
+	height: 64.0rem;
+    background-color: #cff;
+    background-image: url(../images/bkg2.jpg);
+    -webkit-background-size:100% 100% ;
+    background-size: 100% 100%;
+    position: relative;
+}
+/* 模块三遮罩 */
+.function .zhezhao3{
+    width: 100%;
+    height: 64rem;
+    opacity: 0.6;
+    background-color: #000;
+}
+/* givemefive 图*/
+.givemefive2{
+	color: #fff;
+	font-size: 3.3rem;
+    width: 13.0rem;
+    height: 13.0rem;
+    position: absolute;
+    top:13.0rem;
+    left: 7.5rem;
+}
+.givemefive2>img{
+    height: 13rem;
+}
+/* 分类 */
+.function .classify{
+	width: 27.0rem;
+    height: 7.0rem;
+    position: absolute;
+    top:38.0rem;
+    left: 6rem;
+}
+.function .classify li{
+	float: left;
+	width: 8rem;
+	text-align: center;
+}
+.function .classify li img{
+	cursor: pointer;
+}
+.function .classify li p{
+	margin-top: 1.6rem;
+	font-size: 1.1rem;
+	color: #fff;
+}

@@ -1,0 +1,77 @@
+/* 模块四 F-Sport */
+.F-Sport{
+	  height: 64.0rem;
+    background-image: url(../images/bkg3.jpg);
+    -webkit-background-size:100% 100% ;
+    background-size: 100% 100%;
+    position: relative;
+}
+/* 遮罩层 */
+.zhezhao4{
+		width: 100%;
+		height: 64rem;
+		opacity: 0.6;
+		background-color: #000;
+}
+/* givemefive 图*/
+.givemefive3{
+	  color: #fff;
+	  font-size: 3.3rem;
+    width: 13.0rem;
+    height: 13.0rem;
+    position: absolute;
+    top:12.0rem;
+    left: 7.5rem;
+}
+.givemefive3>img{
+    height: 13rem;
+}
+/* 资料 */
+.material{
+	width: 37.0rem;
+    height: 9.0rem;
+    position: absolute;
+    top:36.0rem;
+    left: 7.5rem;
+
+}
+.material a{
+	display: inline-block;
+	height: 3rem;
+	font-size: 2.0rem;
+	color: #fff;
+	margin-right: 2rem;
+}
+a.F-btn{
+	position: absolute;
+	text-align: center;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	top: 0rem;
+	right: 4rem;
+	font-size: 1rem;
+	border-radius: 3.0rem;
+	width: 10rem;
+	background-color: #0bf5c2;
+}
+a.F-btn strong{
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	transition:all 2s;
+}
+a.F-btn:hover{
+	background-color:  #4FE3C3;
+}
+a.F-btn:hover strong{
+	margin-left: 2rem;
+}
+.material .words{
+	font-size: 0.9rem;
+	color: #fff;
+	margin-top: 2rem;
+	height: 5rem;
+	width: 37.0rem;
+}
+.material .words p{
+	line-height: 1.5rem;
+}

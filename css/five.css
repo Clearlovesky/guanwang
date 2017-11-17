@@ -1,0 +1,324 @@
+ /* --------logo */ 
+.logo{
+	cursor: pointer;
+    width: 11.0rem;
+    height: 4.0rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 0.9rem;
+}
+.logo img{
+	vertical-align: middle;
+    width: 4.0rem;
+    height: 4.0rem;
+}
+.logo>span{
+	  position: absolute;
+	  right: 0rem;
+	  top: 0rem;
+	  height: 4rem;
+	  font-size: 3rem;
+	  line-height: 4rem;
+}
+/*--------- 导航栏 */
+ol.nav {
+    color: #fff;
+    width: 100%;
+    height: 6.0rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 35%;
+    z-index: 100;   
+}
+ol.nav li:hover{
+    text-shadow:0px 0px 12px #ccc;
+}
+ol.nav li {
+	opacity: 1;
+    font-size: 1rem;
+    float: left;
+    width: 7%;
+    height: 5.0rem;
+    text-align: center;
+    line-height: 5.0rem;
+    cursor: pointer;
+    position: relative;
+}
+ol.nav li:nth-child(2) i{
+    display: block;
+}
+ol.nav li:nth-child(2){
+	color: #4FE3C3;
+}
+ol.nav li i{
+	display: none;
+	position: absolute;
+	width: 84%;
+	height: 0.18rem;
+	top: 2.43rem;
+	left: 7%;
+	background-color: #29e4bf;
+}
+
+
+/* 登录方式 */
+ol.nav .way{
+    margin-top: 1.5rem;
+    position: fixed;
+    top: 0rem;
+    right: 3rem;
+}
+ol.nav .way a{
+    line-height: 2rem;
+    text-align: center;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+}
+ol.nav .way a img{
+    margin-top: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+ol.nav .way .erweima{
+    position: absolute;
+    top: 3rem;
+    right: -2.9rem;
+    width: 8.0rem;
+    height: 8.0rem;
+    display: none;
+}
+ol.nav .way .erweima img{
+    width: 8.0rem;
+    height: 8.0rem;
+}
+ol.nav .way .erweima::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px transparent solid;
+    border-left: 8px transparent solid;
+    border-right: 8px transparent solid;
+    border-bottom: 8px #fff solid;
+    position: absolute;
+    top: -1.0rem;
+    left: 3.5rem;
+}
+
+/* <模块一 Five内容 start*/
+.five{
+	width: 100%;
+    height: 64.0rem;
+    background-image: url(../images/bkg1.jpg);
+    -webkit-background-size:100% 100% ;
+    background-size: 100% 100%;
+    position: relative;
+}
+/* 模块一遮罩层 */
+.five .zhezhao1{
+	width: 100%;
+	height: 64rem;
+	opacity: 0.6;
+	background-color: #000;
+}
+.givemefive1{
+	color: #fff;
+	font-size: 3.3rem;
+    width: 13.0rem;
+    height: 13.0rem;
+    position: absolute;
+    top:16.0rem;
+    left: 7.5rem;
+}
+.givemefive1>img{
+	height: 13rem;
+}
+
+.video-control{
+	color: #fff;
+	text-align: center;
+	height: 3.0rem;
+	width: 12.0rem;
+	position: absolute;
+	bottom: 25.0rem;
+	left: 7rem;
+    font-size: 1.3rem;
+}
+
+.video-control .play{
+	display: inline-block;
+	cursor: pointer;
+	width: 3.5rem;
+	height: 3.5rem;
+	text-align: center;
+	line-height: 3.5rem;
+	border-radius: 50%;
+	/* background-color: #fff; */
+	margin-right: 0.4rem;
+}
+
+
+.video-control img{
+	cursor: pointer;
+	width: 3.5rem;
+	vertical-align:middle;
+}
+/* <!-- 模块一 Five内容 end */
+
+/* 遮罩层,视频播放 -----------satrt*/
+.player {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	border-radius: 4px;
+	background: #fff url(../images/loading.gif) center/300px no-repeat;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.controls {
+	width: 89%;
+	height: 2.5rem;
+	background-color: rgb(16, 16, 16);
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	z-index: 99;
+	opacity: 0.3;
+}
+.controls:hover  {
+	opacity: 1;
+}
+/*播放/暂停*/
+.controls .switch {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	color: #FFF;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+}
+/*全屏按钮*/
+.controls .expand {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	color: #FFF;
+	position: absolute;
+	right: 11px;
+	top: 11px;
+}
+/*进度条*/
+.progress {
+	width: 430px;
+	height: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: #555;
+	cursor: pointer;
+	position: absolute;
+	top: 16px;
+	left: 45px;
+}
+/*下载进度*/
+.progress .loaded {
+	width: 0;
+	height: 100%;
+	background-color: #999;
+}
+/*播放进度*/
+.progress .line {
+	width: 0;
+	height: 100%;
+	background-color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/**/
+.progress .bar {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+/*时间*/
+.timer {
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	left: 490px;
+	top: 11px;
+	color: #FFF;
+	font-size: 14px;
+}
+
+
+/* 关闭按钮 */
+.close{
+	position: fixed;
+	right: 1rem;
+	top: 1rem;
+	cursor: pointer;
+	transition:all 2s;
+}
+/* 遮罩层,视频播放 -----------end
+
+/* 下载方式 */
+.download{
+	width: 25.0rem;
+	height: 3rem;
+	position: absolute;
+	bottom: 4.0rem;
+	right: 1.5rem;
+	line-height: 4rem;
+}
+.download a{
+	margin-right: 0.7rem;
+}
+.download a:nth-child(3){
+	position: absolute;
+	right: 0rem;
+	top: 0rem;
+	background-color: #fff;
+	height: 2.8rem;
+	width: 2.8rem;
+	text-align: center;
+	border: 1px solid #fff;
+	opacity: 0.5;
+}
+.erweima2{
+	position: absolute;
+	right: 2rem;
+	top: -11rem;
+	width: 8.0rem;
+    height: 8.0rem;
+    display: none;
+}
+.erweima2 img{
+	width: 10.0rem;
+    height: 10.0rem;
+}
+
+
